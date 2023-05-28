@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js"></script>
+  <title>PokeAPI</title>
+</head>
+<body>
+  <main>
+    <section class="search-pokemon">
+      <input type="text" placeholder="Pokemon name or number" onkeypress="handleKeyPress(event)">
+      <button id="searchButton" onclick="searchPokemon()">Search</button>
+    </section>
+    <div class="pokemon">
+      <div class="description">
+        <img id="pokemon-img" src="" alt="Pokemon" class="pokemon-img">
+        <div class="pokemon-description"></div>
+      </div>
+      <section class="pokemon-stats">
+        <h2>Pokemon Stats</h2>
+        <ul>
+          <li>
+            <p class="Name">Name:</p>
+            <p class="value" id="name"></p>
+          </li>
+          <li>
+            <p class="HP">HP:</p>
+            <p class="value" id="hp"></p>
+          </li>
+          <li>
+            <p class="Attack">Attack:</p>
+            <p class="value" id="attack"></p>
+          </li>
+          <li>
+            <p class="Defense">Defense:</p>
+            <p class="value" id="defense"></p>
+          </li>
+          <li>
+            <p class="SpAtk">Special Attack:</p>
+            <p class="value" id="spatk"></p>
+          </li>
+          <li>
+            <p class="SpDef">Special Defense:</p>
+            <p class="value" id="spdef"></p>
+          </li>
+          <li>
+            <p class="Speed">Speed:</p>
+            <p class="value" id="speed"></p>
+          </li>
+        </ul>      
+      </section>
+    </div>
+  </main>
+</body>
+</html>
